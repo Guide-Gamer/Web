@@ -77,7 +77,17 @@ height:30px;
 font-weight:800;
 background-color:lime;
 }
+.animate {
+  -webkit-animation: animatezoom 0.2s;
+  
+}
 
+@-webkit-keyframes animatezoom {
+0% { -webkit-transform:translate(0,-50px); }
+  100% { -webkit-transform:translate(0,0); }
+  }
+
+ 
 </style>
 </head>
 <body bgcolor="black"><center>
@@ -119,7 +129,7 @@ Instagram</a>
 <div class="div2" onclick="map()">
 &nbsp; &nbsp; &nbsp;maps - created by me<span id="arrow1" style="margin-left:20%;">&#10095;</span>
  </div>
-<div id="map">
+<div id="map" class="animate">
 <div class="brdr">
 map-1
 <font size="2" color="blue">
@@ -153,7 +163,7 @@ zombie Mode
 <div class="div2" onclick="showscript()">
   &nbsp; &nbsp; &nbsp;Scripts <span id="arrow2" style="margin-left:53%;">&#10095;</span>
 </div>
-<div id="script">
+<div id="script" class="animate">
 <br>
 <a href="https://youtu.be/p1k-ybLVHh4?si=BhgPV85cRX4eezLh" >
 1. creat dragon</a><br><br>
@@ -172,7 +182,7 @@ zombie Mode
 <div class="div2" onclick="queAns()">
   &nbsp; &nbsp; &nbsp;Question - answers <span id="arrow3" style="margin-left:24%;">&#10095;</span>
 </div>
-<div id="qa" >
+<div id="qa" class="animate">
 no question is asked<br><br>
 
 <a href="mailto:guidegamer016@gmail.com?subject=Craftland%20script%20problem"  class="email-button">
