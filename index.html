@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Guide gamer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style type="text/css">
+#bg{
+width: 100%;
+height: 100%;
+background-color:black;
+position:fixed;
+transform: translate(-50%,-50%);
+dusplay:block;
+top: 50%;
+left: 50%;
+}
+
+#container {
+  width:80px;
+  height:80px;
+  text-align:center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+ 
+}
+
+@keyframes animation {
+  0% {
+    stroke-dasharray: 1 98;
+    stroke-dashoffset: -105;
+  }
+  50% {
+    stroke-dasharray: 80 10;
+    stroke-dashoffset: -160;
+  }
+  100% {
+    stroke-dasharray: 1 98;
+    stroke-dashoffset: -300;
+  }
+}
+
+#spinner {
+  transform-origin: center;
+  animation-name: animation;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier;
+  animation-iteration-count: infinite;
+ 
+}
+.nocopy{
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+#navi_container{
+position:sticky;
+top:0%;
+box-shadow: 0 0px 15px 0 rgba( 255, 255, 255, 0.5), 0 0px 15px 0 rgba( 255, 255, 255, 0.5);
+}
+#navigation_top{
+background-image: linear-gradient(to right,pink,orange);
+height:30px;
+width:100%;
+text-align:center;
+font-weight:900;
+font-family:cursive;
+font-size:25px;
+color:black;
+border:1px black;
+border-style:none none solid none;
+}
+
+#bug_report{
+border-radius:50%;
+height:30px;
+width:30px;
+float:right;
+font-weight:bold;
+background-color:grey;
+border:1px solid red;
+font-size:20px;
+
+
+}
+
+#navigation_bar{
+background-color:cyan;
+width:100%;
+height:40px;
+font-weight:bold;
+overflow:auto;
+white-space: nowrap;
+line-height:40px;
+}
+#navigation_bar a {
+ color:black;
+ text-align: center;
+ padding:18px;
+ text-decoration: none;
+ font-size: 17px;
+}
+
+#home{
+display:none;
+font-weight:bold;
+margin-top:30px;
+}
+
+#map{
+display:none;
+background-color:yellow;
+text-align:center;
+font-weight:bold;
+}
+
+#script{
+display:none;
+font-weight:bold;
+font-size:20px;
+background-color:rgb(210,210,210);
+border:10px black;
+border-style:solid none none none;
+}
+#qa{
+display:none;
+text-align:left;
+background-color:rgb(260,170,210);
+border:10px black;
+border-style:solid none none none;
+}
+
+img{width:100%;}
+
+#logo {
+width:90px;
+height:90px;
+float:left;
+}
+#information{
+font-size:17px;
+text-align:center;
+border:2px solid blue;
+background-color:yellow;
+height:65px;
+}
+.sm{
+padding:10px 0;
+background-color:rgb(60,60,60);
+width:100%;
+border:1px white;
+border-style:solid none solid none;
+}
+.link1{
+text-decoration: none;
+font-weight:bold;
+color:cyan;
+
+
+}
+
+
+#copyuid{
+  font-weight:bold;
+  color:blue;
+  height:30px;
+  background-color:white;
+ 
+  } 
+.leftbtn{
+font-weight:bold;
+height:40px;
+float:left;
+margin-left:20px;
+color:white;
+background-color:#ff2600;
+}
+.rightbtn{
+font-weight:bold;
+height:40px;
+float:right;
+margin-right:20px;
+color:blue;
+background-color:lime;
+}
+.brdr{
+border:10px solid black;
+
+
+}
+
+#ask{
+position:fixed;
+top:83%;
+left:55%;
+width:120px;
+height:40px;
+font-weight:800;
+background-color:lime;
+border:2px solid black;
+}
+.animate {
+  -webkit-animation: animatezoom 0.2s;
+  
+}
+
+@-webkit-keyframes animatezoom {
+0% { -webkit-transform:translate(0,-50px); }
+  100% { -webkit-transform:translate(0,0); }
+  }
+
+#aboutus_heading {
+border:2px white;
+border-style:none none solid none;
+color:white;
+}
+#aboutus_content{
+color:white;
+border:2px white;
+border-style:none none dotted none;
+}
+</style>
+
+</head>
+<body bgcolor="black">
+
+<div id="navi_container">
+<div id="navigation_top">
+Guide Gamer
+<button id="bug_report" onclick="window.alert('please repot bugs on any soccial media given below')">!</button>
+</div>
+<div id="navigation_bar" class="nocopy">
+
+<a class="navigation_elements" id="home_btn" onclick="home()">
+Home
+</a>
+<a class="navigation_elements" id="map_btn" onclick="map()">
+Maps
+</a>
+<a class="navigation_elements" id="script_btn" onclick="showscript()">
+Scripts
+</a>
+<a class="navigation_elements" id="qna_btn" onclick="queAns()">
+QnA
+</a>
+
+</div>
+</div>
+
+<div id="bg"><div id="container">
+  <svg viewBox="0 0 100 100">
+    <defs>
+      <filter id="shadow">
+        <feDropShadow dx="0" dy="0" stdDeviation="1.5" 
+          flood-color="#fc6767"/>
+      </filter>
+    </defs>
+    <circle id="spinner" style="fill:transparent;stroke:white;stroke-width: 5px;stroke-linecap: round;filter:url(#shadow);" cx="50" cy="50" r="45"/>
+</svg>
+<font size="2" style="color:cyan;font-align:center;">loading...</font>
+</div></div>
+
+
+
+
+
+<div id="home" class="animate">
+
+<img id="logo" src="Logo.png">
+
+
+<p style="margin-left:120px;font-size:13px;">
+<font style="color:white;font-size:32px;">Guide gamer</font><br>
+<a style="color:grey;text-decoration:none;"href="https://youtube.com/@guidegamer016" >
+<font style="color:grey;font-size:16px;">@guidegamer016</font><br>
+view channel &#10095;
+</p></a><br>
+<center><strong>
+<font color="red">
+Free fire uid -
+</font>
+<font color="lime">
+5240583512
+</font>
+<button onclick="myFunction()" id="copyuid">
+Copy uid
+</button>
+</strong>
+</center>
+<br>
+
+<div id="information">
+<strong>
+you can ask me your problem on <font color="red">YouTube</font> and <font color="#ff00ff">Instagram</font>.
+you can also ask question from <font color="voilet">QnA</font> slide.
+</strong>
+</div><br><br>
+<font style="font-weight:500;color:grey;">social media </font>
+<a href="https://youtube.com/@Guidegamer016" class="link1">
+<div class="sm">&nbsp;&nbsp;&nbsp;
+<i class="fa fa-youtube-play" style="font-size:20px;color:red"></i>
+Youtube channel &nbsp; &#10095;
+</div>
+</a>
+
+<a href="https://www.instagram.com/guidegamer_016" class="link1">
+<div class="sm">&nbsp;&nbsp;&nbsp;
+<i class="fa fa-instagram" style="font-size:20px;color:#ff00ff;" id="insta"></i>
+Instagram &nbsp; &#10095;
+</div>
+</a>
+
+<a href="t.me/Guidegamer016" class="link1">
+<div class="sm">&nbsp;&nbsp;&nbsp;
+<i class="fa fa-telegram" style="font-size:20px;color:#059fff;" id="insta"></i>
+Telegram  &nbsp; &#10095;
+</div>
+</a>
+
+<a href="mailto:guidegamer016@gmail.com" class="link1">
+<div class="sm">&nbsp;&nbsp;&nbsp;
+<font style="font-size:20px;"> &#128231; </font>Email &nbsp;  &#10095;
+</div>
+</a>
+<br><br>
+<h1 id="aboutus_heading">About Us</h1>
+<p id="aboutus_content">
+<font style="font-size:20px;color:lime;">Welcome to Guidegamer's web</font><br><br>
+As a fellow gamer and creator, I've been sharing my passion for gaming on <font color="red">YouTube</font>, and now I'm excited to bring that experience to this <font color="cyan">website</font>.
+Here, you'll find <font color="yellow"> Craftland </font>maps and scripts related Informations and questions asked by gamers.
+ Don't worry about your problem Just ask.
+I'm committed to providing you with the best content to enhance your gaming experience. Whether you're a seasoned 
+pro or just starting out, I invite you to explore the site and join the community of gamers who share your passion!
+</p>
+</div>
+
+
+
+
+<div id="map" class="animate">
+
+<div class="brdr">
+map-1<br>
+
+<font color="red" size="10">
+1 vs 1 vs 1
+</font>
+<img src="https://i.ibb.co/72q4mZm/Picsart-24-08-26-15-05-56-378.jpg">
+<br><br>
+<button class="leftbtn" id="copymap7" onclick="copymap7()">copy MapCode  &#128196</button>
+ <a href="" download> <button class="rightbtn" onclick="window.alert('SORRY, map file not available ')">Download MapFile &#128194 <br>(not available)</button></a>
+<br><br><br>
+
+</div>
+
+<div class="brdr">
+map-2<br>
+
+<font color="red" size="10">
+1 vs 1
+</font>
+<img src="https://i.ibb.co/2PvvrQB/IMG-20240506-195717.jpg">
+<br><br>
+<button class="leftbtn" id="copymap1" onclick="copymap1()">copy MapCode  &#128196</button>
+ <a href="1v1.zip" download> <button class="rightbtn" >Download MapFile &#128194</button></a>
+<br><br><br>
+
+</div>
+
+
+ 
+<div class="brdr">
+ map-3<br>
+
+<font size="10" color="red">
+zombie Mode
+</font>
+<img src="https://i.ibb.co/Y38FDwm/Picsart-24-07-19-07-32-02-647.jpg"  >
+<br><br>
+<button class="leftbtn" id="copymap2" onclick="copymap2()">copy MapCode &#128196</button>
+<a href="zombie_mode.zip" download> <button class="rightbtn">Download MapFile &#128194 </button></a>
+
+<br><br><br>
+
+</div>
+ 
+ 
+ <div class="brdr">
+ map-4<br>
+
+  <font size="10" color="red">
+ Lone wolf
+ </font>
+ <img src="https://i.ibb.co/tPhpkGW/Picsart-24-05-27-11-19-41-332.jpg"  >
+ <br><br>
+ <button class="leftbtn" id="copymap3" onclick="copymap3()">copy MapCode &#128196</button>
+  <a href="lone_wolf.zip" download> <button class="rightbtn">Download MapFile &#128194 </button></a>
+ <br><br><br>
+ <a href="https://youtu.be/ob7hJPyJZwE?si=VNquHBk6-_vj4iuM" >click here to watch map explanation video</a><br>
+ <br>
+ 
+ </div>
+ 
+ <div class="brdr">
+ map-5<br>
+
+  <font style="font-size:40px;" color="red">
+ Guidegamerv1
+ </font>
+ <img src="https://i.ibb.co/KXZkT04/Picsart-24-06-25-16-32-45-797.jpg"  >
+ <br><br>
+
+ <button class="leftbtn" id="copymap4" onclick="copymap4()">copy MapCode &#128196</button>
+ <a href="Guidegamer_v1.zip" download> <button class="rightbtn">Download MapFile &#128194 </button></a>
+ <br><br><br>
+ <a href="https://youtu.be/tjTqZf05gKc?si=JC2x6EBbVyHejacL" >click here to watch map explanation video</a><br><br>
+ </div>
+ 
+ <div class="brdr">
+ map-6<br>
+ 
+ <font size="10" color="red">
+ 1vs1_onetap
+ </font>
+ <img src="https://i.ibb.co/yq4g8Hm/Picsart-24-07-11-09-48-33-783.jpg"  >
+ <br><br>
+ 
+ <button class="leftbtn" id="copymap5" onclick="copymap5()">copy MapCode &#128196</button>
+ <a href="1v1_bermuda.zip" download> <button class="rightbtn">Download MapFile &#128194 </button></a>
+ <br><br><br>
+ <a href="https://youtu.be/Udxn6t_NI2M" >click here to watch map explanation video</a><br><br><br>
+ </div>
+ 
+ <div class="brdr">
+ map-7<br>
+ 
+ <font size="10" color="red">
+ Squid_game
+ </font>
+ <img src="https://i.ibb.co/6tq4NG8/Picsart-24-07-19-07-14-57-178.png"  >
+ <br><br>
+ 
+ <button class="leftbtn" id="copymap6" onclick="copymap6()">copy MapCode &#128196</button> 
+<a href="squid_game.zip" download> <button class="rightbtn">Download MapFile &#128194 </button></a>
+ <br><br><br>
+ 
+ <a href="https://youtu.be/nmRGlG3IIGQ" >click here to watch map explanation video</a><br><br><br>
+ </div>
+</div>
+
+<div id="script" class="animate">
+<br>
+<a href="https://youtu.be/p1k-ybLVHh4?si=BhgPV85cRX4eezLh" >
+1. creat dragon</a><br><br>
+<a href="https://youtu.be/xp_j4PA9Efo?si=2rCSeVa7UwiScz5x" >
+2. solve gloowal problem -1st way</a><br><br>
+<a href="https://youtu.be/c8S3lAjTZrg?si=Shme392j3q1Gh7sA" >
+3. solve gloowal problem -2nd way</a><br><br>
+<a href="https://youtu.be/UmM8hres6rE?si=CaaEqHKyun6p7i9h" >
+4. Create 13 rounds</a><br><br>
+<a href="https://youtu.be/R0dBmwa8nMM?si=eII6tjFqIoLEzVMy" >
+5. create voting system</a><br><br>
+<a href="https://youtu.be/Jnqc8sqvPYY?si=rb25EZVHDfOr0mAk" >
+6. create evo guns</a><br><br>
+<a href="https://youtu.be/otfJWVw_ihk?si=-Tqe9EMHqLJHYxqD" >
+7. create multiple fist skin</a><br><br>
+<a href="https://youtu.be/LcEjRET0R9s?si=u6TMEh-qDGXAY_pK" >
+8. create visual effects</a><br><br>
+<a href="https://youtu.be/nwFyX63KF-0?si=rgsZVD8K1RMq7Lnm" >
+9. stop crossbow arrows</a><br><br><br>
+</div>
+
+
+<div id="qa" class="animate">
+<b>Q1- how to create jersey store?<br>
+solution- </b><i style="color:blue;">There is a search bar in craftland edit page in lower left side search there jersey machine and use it.</i> <br><br>
+
+<b>Q2- how to create new glider?<br>
+solution-</b> <i style="color:blue;">use create position following motin custom block and set a normal cubiod to follow player while glider is open.</i><br><br>
+
+<b>Q3- how to create transparent wall?<br>
+solution-</b> <i style="color:blue;">use image then turn off always follow camera and reduce its transparancy after that place a block in positin of image and turn off its visibility.</i><br><br>
+
+<b>Q4- How to create a map like sasco with emotes and bundles in Bermuda ?<br>
+
+solution-</b> <i style="color:blue;">For emote use new animation tigger and for bundle use old map file.</i><br><br>
+
+<b>Q5- How to make real time ?<br>
+
+solution-</b><i style="color:blue;">custom block is needed</i><br><br>
+
+<b>Q6- what is your name and where do you live ?<br>
+
+solution-</b><i style="color:blue;">presonal question nahi</i><br><br>
+<br>
+
+<b>Q7 - vedansh<br>
+
+solution-</b><i style="color:blue;">wah kiya question hai</i><br><br>
+<br>
+<b>Q8 - I am a small youtuber who makes story videos, so I request you to make a full map of Bermuda Remastered<br>
+
+solution-</b><i style="color:blue;"> at this time it is not possible to create a map in Bermuda remastered (craftland)</i><br><br>
+<br>
+
+<b>Q9 - Radom's spawn location script is like the spawn in traning mode<br>
+
+solution-</b><font style="color:blue;"><b> script (see below)</b> <br>
+when entity is creatd <br>
+append list [variable name] [x,y,z]<br><br>
+when entity is eliminated<br>
+wait time[]milesec<br>
+set property[pl entity] [spawn point] [obtain list [variable name] [get random integer (0)  (max no of list - 1)]<br>
+player revival [elimimated entity]<br>
+</font><br><br>
+
+<a href="mailto:guidegamer016@gmail.com?subject=Craftland%20script%20problem" class="email-button">
+<button id="ask">Ask question</button>
+</a>
+<br><br>
+</div>
+
+
+
+<br>
+
+<font color="grey" size="2">
+&nbsp;If you want to create a website for your channel then contact me.</font>
+
+
+<script type="text/javascript">
+const myTimeout = setTimeout(loadoff, 2000);
+const Home = document.getElementById('home_btn');
+const Map = document.getElementById('map_btn');
+const Script = document.getElementById('script_btn');
+const QnA = document.getElementById('qna_btn');
+
+
+function loadoff(){
+document.getElementById("bg").style.display = "none";
+document.getElementById("home").style.display = "block";
+Home.style.backgroundColor="#04AA6D"
+
+}
+
+
+
+function myFunction() {
+ // Copy the text inside the text field
+  navigator.clipboard.writeText('5240583512');
+  document.getElementById('copyuid').innerHTML="<strong>copied <font color='green'>&#x2713;</font></Strong>";
+}
+
+
+
+function home(){
+document.getElementById("home").style.display = "block";
+document.getElementById("map").style.display = "none";
+document.getElementById("script").style.display = "none";
+document.getElementById("qa").style.display = "none";
+Home.style.backgroundColor="#04AA6D"
+Map.style.backgroundColor="cyan"
+Script.style.backgroundColor="cyan"
+QnA.style.backgroundColor="cyan"
+
+}
+
+function map(){
+document.getElementById("home").style.display = "none";
+document.getElementById("map").style.display = "block";
+document.getElementById("script").style.display = "none";
+document.getElementById("qa").style.display = "none";
+Home.style.backgroundColor="cyan"
+Map.style.backgroundColor="#04AA6D"
+Script.style.backgroundColor="cyan"
+QnA.style.backgroundColor="cyan"
+
+}
+
+function copymap1(){
+navigator.clipboard.writeText('#FREEFIRE0FA64AD57EA6351207F4CE6F2B826A793512');
+document.getElementById('copymap1').innerHTML="<strong>copied <font color='lime'>&#x2713;</font></Strong>";
+
+
+}
+function copymap2(){
+navigator.clipboard.writeText('#FREEFIRE89A339CD411C863E96916D0314C135913512');
+document.getElementById('copymap2').innerHTML="<strong>copied <font color='lime'>&#x2713;</font></Strong>";
+}
+function copymap3(){
+navigator.clipboard.writeText('#FREEFIRE8647679AA2B3A342F9EDB07E86D83E273512');
+document.getElementById('copymap3').innerHTML="<strong>copied <font color='lime'>&#x2713;</font></Strong>";
+}
+function copymap4(){
+navigator.clipboard.writeText('#FREEFIREA0459CEC5ECEFE03A211BE96E71BD3C51028');
+document.getElementById('copymap4').innerHTML="<strong>copied <font color='lime'>&#x2713;</font></Strong>";
+}
+function copymap5(){
+navigator.clipboard.writeText('#FREEFIRE21BA904E00253E87196E633ED86C11791028');
+document.getElementById('copymap5').innerHTML="<strong>copied <font color='lime'>&#x2713;</font></Strong>";
+}
+function copymap6(){
+navigator.clipboard.writeText('#FREEFIREC2F17184DB7BFDD096B22266E8E1450F1028');
+document.getElementById('copymap6').innerHTML="<strong>copied <font color='lime'&#x2713;</font></Strong>";
+}
+function copymap7(){
+navigator.clipboard.writeText('#FREEFIRE24B11E7BC7D246230990978EFCD7C4BC1576');
+document.getElementById('copymap7').innerHTML="<strong>copied <font color='lime'&#x2713;</font></Strong>";
+}
+
+function showscript(){
+document.getElementById("home").style.display = "none";
+document.getElementById("map").style.display = "none";
+document.getElementById("script").style.display = "block";
+document.getElementById("qa").style.display = "none";
+Home.style.backgroundColor="cyan"
+Map.style.backgroundColor="cyan"
+Script.style.backgroundColor="#04AA6D"
+QnA.style.backgroundColor="cyan"
+
+
+}
+
+function queAns(){
+document.getElementById("home").style.display = "none";
+document.getElementById("map").style.display = "none";
+document.getElementById("script").style.display = "none";
+document.getElementById("qa").style.display = "block";
+Home.style.backgroundColor="cyan"
+Map.style.backgroundColor="cyan"
+Script.style.backgroundColor="cyan"
+QnA.style.backgroundColor="#04AA6D"
+
+}
+
+
+</script>
+</body>
+</html>
