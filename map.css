@@ -1,0 +1,119 @@
+#main-content {
+flex: 1; /* this pushes footer to the bottom */
+}
+
+    body { margin: 0px; background: linear-gradient(to right, #6a11cb, #2575fc); font-family: Arial, sans-serif; display: flex;
+flex-direction: column;
+}
+/* Loader wrapper - only this is centered */
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color:rgba(20,20,20,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 998;
+}
+
+
+
+.loader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      
+    }
+
+    .loader div {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      opacity: 0.3;
+      animation: bounce 1.2s infinite ease-in-out;
+    }
+
+    .loader div:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .loader div:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    @keyframes bounce {
+      0%, 80%, 100% {
+        transform: scale(0.8);
+        opacity: 0.3;
+      }
+      40% {
+        transform: scale(1.4);
+        opacity: 1;
+      }
+    }
+
+    img { pointer-events: none; user-select: none; -webkit-user-drag: none; }
+    #navigation_top {
+      background-image: linear-gradient(to right, pink, orange);
+      height: 40px; line-height: 40px; text-align: center;
+      font-weight: bold; font-size: 25px; color: black;
+      position:fixed; width:100%; font-family:cursive; z-index: 999;
+      border-style:none none solid none;
+    }
+    #navigation_top a {
+      color: black; text-decoration: none; font-weight: bold;
+      float:left; font-family:roboto;
+      background-color:cyan; width:60px;
+      border-style:none solid none none;
+    }
+    #searchInput {
+      width: 80%; padding: 10px; margin-top: 60px;
+      display: block; font-size: 16px;
+      border: 1px solid #ccc; border-radius: 8px;
+    }
+    #map {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px; padding: 20px;
+    }
+    .brdr {
+      background-color: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+    .brdr img { width: 90%; border-radius: 6px; }
+    .leftbtn, .rightbtn {
+      padding: 10px; margin: 5px; font-weight: bold;
+      border: none; border-radius: 5px; cursor: pointer; width:120px;
+    }
+    .line {
+      width:290px;
+      height:1px;
+      background-color:grey;
+    }
+    .leftbtn { background-color: #ff2600; color: white; }
+    .rightbtn { background-color: transparent; color: blue; }
+    .heart-icon { font-size: 30px; vertical-align: middle; }
+    a { text-decoration: none; color: blue; }
+  
