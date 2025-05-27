@@ -29,7 +29,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.1/firebas
           { text: "INDIA 4Player", code: "#FREEFIRE379FB1E478E530EEA27A1A99C716ED391028" },
           { text: "OTHERS 4Player", code: "#FREEFIRE8FD02344A822BDEDB16F5A7811528CA56248" }
         ],
-        video: "",
+        video: "https://youtu.be/FUu9w8_9hAI",
         keywords: "solara beastmode india 1 Player 2 Player 4 Player"
       },
       {
