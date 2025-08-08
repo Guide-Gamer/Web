@@ -13,22 +13,32 @@
     <font style="margin-left:-30px;">Guide Gamer</font>
   </div>
   <center>
-    <input type="text" id="searchInput" placeholder=" &#128269; Search maps..." onkeyup="filterMaps()">
+    <div class="search-container">
+      <div class="search-and-suggestions-wrapper">
+        <input type="text" id="searchInput" placeholder="🔍 Search maps...">
+        <button id="suggestionToggle" onclick="toggleSuggestions()">Suggestions:<br><b>On</b></button>
+        <div id="suggestions"></div>
+      </div>
+      
+      <div class="sort-buttons-container">
+        <button class="sort-btn active" onclick="sortMaps('recent')">Latest</button>
+        <button class="sort-btn" onclick="sortMaps('likes')">Most Liked</button>
+        <button class="sort-btn" onclick="sortMaps('oldest')">Oldest</button>
+      </div>
+    </div>
   </center>
+  
   <div id="map">
     <div class="loader-wrapper">
-    <div class="loader">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-  </div>
+      <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
+  </div>
   
-
-  <script type="module" src="mapscript.js">
-  
-</script>
+  <script type="module" src="mapscript.js"></script>
 
 </body>
 </html>
