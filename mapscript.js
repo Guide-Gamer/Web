@@ -52,7 +52,7 @@ const maps = [
   },
   {
     title: "BEASTMODE SOLARA",
-    image: "solara.jpeg",
+    image: "solara.png",
     codes: [
       { text: "INDIA 1Player", code: "#FREEFIRE3C2FE65D7724560EF650559B00DE7F091028" },
       { text: "OTHERS 1Player", code: "COMMING SOON..." },
