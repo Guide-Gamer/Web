@@ -23,9 +23,9 @@ const maps = [
     image: "object.jpg",
     codes: [
       { text: "INDIA", code: "#FREEFIRE93AB6B851C28F2A43DB33629FA37F73D3512" },
-      { text: "OTHERS", code: "Available in 2hrs" },
+    
     ],
-    video: "",
+    video: "https://youtu.be/b9dqSDkV2ew?si=g1sm9yinagGFP18k",
     keywords: "zombie hunt monster story india 4 player",
     dateAdded: new Date('2025-08-08')
   },
@@ -61,7 +61,7 @@ const maps = [
       { text: "INDIA 4Player", code: "#FREEFIRE379FB1E478E530EEA27A1A99C716ED391028" },
       { text: "OTHERS 4Player", code: "#FREEFIRE8FD02344A822BDEDB16F5A7811528CA56248" }
     ],
-    video: "",
+    video: "https://youtu.be/4k4agdFc_9E?si=kpUNl8AoWOogamQI",
     keywords: "solara beastmode india 1 Player 2 Player 4 Player",
     dateAdded: new Date('2025-07-01')
   },
@@ -78,7 +78,7 @@ const maps = [
   },
   {
     title: "BEASTMODE BERMUDA",
-    image: "https://i.ibb.co/vvzWjf4B/Picsart-25-02-13-21-20-32-458.jpg",
+    image: "beastmode.jpeg",
     codes: [
       { text: "INDIA 1Player", code: "#FREEFIRE2B0AB26301D114904489B3ADE33A4BEC1028" },
       { text: "OTHERS 1Player", code: "#FREEFIRE626CA7F5425ED335266595C1F22885446248" },
