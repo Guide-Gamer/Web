@@ -18,6 +18,17 @@ const analytics = getAnalytics(app);
 const db = getDatabase(app);
 
 const maps = [
+    {
+    title: "SNOWLAND PARKOUR",
+    image: "parkour.jpg",
+    codes: [
+      { text: "INDIA", code: "#FREEFIRED7969AEF0D15304B81EACE94298B30573512" },
+    
+    ],
+    video: "https://youtu.be/3WWUR6XCAS0?si=ZtlWOh4HVsNP87rs",
+    keywords: "creative popular games ball game password snowland parkour v2 india 4 player",
+    dateAdded: new Date('2025-10-05')
+  },
   {
     title: "OBJECT IDS VIEWER",
     image: "object.jpg",
@@ -26,7 +37,7 @@ const maps = [
     
     ],
     video: "https://youtu.be/b9dqSDkV2ew?si=g1sm9yinagGFP18k",
-    keywords: "zombie hunt monster story india 4 player",
+    keywords: "object code Object ids all objects code",
     dateAdded: new Date('2025-08-08')
   },
   
