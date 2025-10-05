@@ -20,7 +20,7 @@ const db = getDatabase(app);
 const maps = [
     {
     title: "SNOWLAND PARKOUR",
-    image: "parkour.jpg",
+    image: "Parkour.jpg",
     codes: [
       { text: "INDIA", code: "#FREEFIRED7969AEF0D15304B81EACE94298B30573512" },
     
