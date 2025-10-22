@@ -18,6 +18,17 @@ const analytics = getAnalytics(app);
 const db = getDatabase(app);
 
 const maps = [
+   {
+    title: "SNIPER 2v2",
+    image: "sniper.jpg",
+    codes: [
+      { text: "INDIA", code: "#FREEFIREE5009F262EEAF8689A0395793BBBBEB73512" },
+    
+    ],
+    video: "https://youtu.be/H0Txe-oRwlA?si=E1ldykASTKGSvaUF",
+    keywords: "sniper 2v2 password 2v2 Sniper india 4 player",
+    dateAdded: new Date('2025-10-22')
+  },
     {
     title: "SNOWLAND PARKOUR",
     image: "Parkour.jpg",
