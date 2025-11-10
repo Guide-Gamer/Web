@@ -260,7 +260,7 @@ function fetchLikesAndInitialize() {
       };
     });
     
-    sortMaps('recent');
+    sortMaps('likes');
     updateIcons();
     
     document.querySelector('.loader-wrapper').style.display = 'none';
