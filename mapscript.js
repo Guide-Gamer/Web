@@ -100,7 +100,7 @@ const maps = [
   },
   {
     title: "BEASTMODE BERMUDA",
-    image: "beastmode.jpeg",
+    image: "newbr.jpeg",
     codes: [
       { text: "INDIA 1Player", code: "#FREEFIRE2B0AB26301D114904489B3ADE33A4BEC1028" },
       { text: "OTHERS 1Player", code: "#FREEFIRE626CA7F5425ED335266595C1F22885446248" },
