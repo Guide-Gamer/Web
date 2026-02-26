@@ -99,8 +99,8 @@ const maps = [
     title: "BEASTMODE BERMUDA",
     image: "newbr.jpeg",
     codes: [
-      { text: "INDIA 1Player", code: "#FREEFIRE48CFEBD557EFF4C2071A8430270F6E4B1028" },
-      { text: "OTHERS 1Player", code: "#FREEFIRE626CA7F5425ED335266595C1F22885446248" },
+      { text: "INDIA", code: "#FREEFIRE48CFEBD557EFF4C2071A8430270F6E4B1028" },
+      { text: "OTHERS", code: "#FREEFIRE626CA7F5425ED335266595C1F22885446248" },
     ],
     video: "https://youtu.be/-EdbPnAFhW8",
     keywords: "beastmode bermuda all-in-one 1 Player 2 Player 4 Player 8 player India Brazil ",
@@ -111,7 +111,7 @@ const maps = [
     image: "https://i.ibb.co/C3MGyBP2/Picsart-25-03-08-17-58-48-320.jpg",
     codes: [
       { text: "INDIA", code: "#FREEFIREFF8765C68BB5E9181574043A7B58BEC91028" },
-      { text: "OTHERS 1Player", code: "comming soon" },
+      { text: "OTHERS", code: "comming soon" },
     ],
     video: "https://youtu.be/hwLnttGgSyE",
     keywords: "kalahari beastmode 1 Player 2 Player 4 Player India ",
