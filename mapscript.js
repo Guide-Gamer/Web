@@ -76,14 +76,11 @@ const maps = [
     title: "BEASTMODE SOLARA",
     image: "solara.png",
     codes: [
-      { text: "INDIA 1Player", code: "#FREEFIRE3C2FE65D7724560EF650559B00DE7F091028" },
-      { text: "OTHERS 1Player", code: "COMMING SOON..." },
-      { text: "INDIA 2Player", code: "#FREEFIREB15900455C70905E40E8BE4647DFA5CC1028" },
-      { text: "OTHERS 2Player", code: "#FREEFIRE8BF16FB45BF8E4ED5242E2B47FB23C046248" },
-      { text: "INDIA 4Player", code: "#FREEFIRE379FB1E478E530EEA27A1A99C716ED391028" },
-      { text: "OTHERS 4Player", code: "#FREEFIRE8FD02344A822BDEDB16F5A7811528CA56248" }
+      { text: "INDIA", code: "#FREEFIRE6AC28E472A9F04421D4917D5898D1FCB1028" },
+      { text: "OTHERS", code: "COMMING SOON..." },
+      
     ],
-    video: "https://youtu.be/4k4agdFc_9E?si=kpUNl8AoWOogamQI",
+    video: "https://youtu.be/hwLnttGgSyE",
     keywords: "solara beastmode india 1 Player 2 Player 4 Player",
     dateAdded: new Date('2025-07-01')
   },
@@ -102,13 +99,8 @@ const maps = [
     title: "BEASTMODE BERMUDA",
     image: "newbr.jpeg",
     codes: [
-      { text: "INDIA 1Player", code: "#FREEFIRE2B0AB26301D114904489B3ADE33A4BEC1028" },
+      { text: "INDIA 1Player", code: "#FREEFIRE48CFEBD557EFF4C2071A8430270F6E4B1028" },
       { text: "OTHERS 1Player", code: "#FREEFIRE626CA7F5425ED335266595C1F22885446248" },
-      { text: "INDIA 2Player", code: "#FREEFIREEEE65B538370661C724771B5EA8E3CCE1028" },
-      { text: "OTHERS 2Player", code: "#FREEFIRE8527E22B990AB8C80859F16331B4F76E6248" },
-      { text: "INDIA 4Player", code: "#FREEFIRE35B2644BCC485CC685F41304C2E980F21028" },
-      { text: "OTHERS 4Player", code: "#FREEFIRED4C0D3ED65E6B5E9D476DBABFC2B78936248" },
-      { text: "INDIA 8Player", code: "#FREEFIREFF8765C68BB5E9181574043A7B58BEC91028" }
     ],
     video: "https://youtu.be/-EdbPnAFhW8",
     keywords: "beastmode bermuda all-in-one 1 Player 2 Player 4 Player 8 player India Brazil ",
@@ -118,14 +110,10 @@ const maps = [
     title: "BEASTMODE KALAHARI",
     image: "https://i.ibb.co/C3MGyBP2/Picsart-25-03-08-17-58-48-320.jpg",
     codes: [
-      { text: "INDIA 1Player", code: "#FREEFIREBF8C9D90B2DC0D73EF2C10506069C8B85293" },
-      { text: "OTHERS 1Player", code: "#FREEFIRE444FE87CA69578E748BAEFC6C07949081956" },
-      { text: "INDIA 2Player", code: "#FREEFIRE2182723F7ACD0F452B0923DAADA431BD5293" },
-      { text: "OTHERS 2Player", code: "#FREEFIRECE8FB9DA86000F6FF76296206BA14F4C1956" },
-      { text: "INDIA 4Player", code: "#FREEFIRE8B075000C1FBF186EDC8EC3B5A00BF485293" },
-      { text: "OTHERS 4Player", code: "#FREEFIREF3B0C555D621B909F030D4FD26D849551956" }
+      { text: "INDIA", code: "#FREEFIREFF8765C68BB5E9181574043A7B58BEC91028" },
+      { text: "OTHERS 1Player", code: "comming soon" },
     ],
-    video: "https://youtu.be/9VuPwtDSVho",
+    video: "https://youtu.be/hwLnttGgSyE",
     keywords: "kalahari beastmode 1 Player 2 Player 4 Player India ",
     dateAdded: new Date('2025-06-15')
   },
@@ -133,12 +121,10 @@ const maps = [
     title: "BEASTMODE NEXTERRA",
     image: "https://i.ibb.co/qMmwknsv/Picsart-25-02-28-09-54-29-910.jpg",
     codes: [
-      { text: "INDIA 2Player", code: "#FREEFIREDED528052C6F0098DD421F039E680F3E5293" },
-      { text: "OTHERS 2Player", code: "#FREEFIREE77D52A20E8C47B0C3E758CAC22CE8371956" },
-      { text: "INDIA 4Player", code: "#FREEFIRE4FB98548E27F99857A197F82DFE5D5D15293" },
-      { text: "OTHERS 4Player", code: "#FREEFIRE281766F6302BFB71E6E01590CC7567AB1956" }
+      { text: "INDIA", code: "#FREEFIREFD58DAA86717C8A3B740656C831015421028" },
+      { text: "OTHERS", code: "comming soon..." },
     ],
-    video: "https://youtu.be/atwX3no_As8",
+    video: "https://youtu.be/hwLnttGgSyE",
     keywords: "nexterra beastmode 1 Player 2 Player 4 Player India ",
     dateAdded: new Date('2025-06-10')
   },
