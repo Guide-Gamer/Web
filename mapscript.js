@@ -111,7 +111,7 @@ const maps = [
     image: "https://i.ibb.co/C3MGyBP2/Picsart-25-03-08-17-58-48-320.jpg",
     codes: [
       { text: "INDIA", code: "#FREEFIREFF8765C68BB5E9181574043A7B58BEC91028" },
-      { text: "OTHERS", code: "comming soon" },
+      { text: "OTHERS", code: "#FREEFIREDD5C00BD6C1A1A350366941AA068D16B6248" },
     ],
     video: "https://youtu.be/hwLnttGgSyE",
     keywords: "kalahari beastmode 1 Player 2 Player 4 Player India ",
